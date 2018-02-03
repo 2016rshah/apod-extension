@@ -1,5 +1,7 @@
 body {
-  min-width: 357px;
+  /*min-width: 357px;
+  max-width: 500px;*/
+  width:400px;
   overflow-x: hidden;
 }
 img {
@@ -17,4 +19,12 @@ h1{
 }
 #explanation {
   display:none;
+}
+
+#apod_title {
+  font-family: Arial;
+}
+
+body {
+  font-family: sans-serif;
 }

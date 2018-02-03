@@ -4,22 +4,18 @@
   <meta charset="utf-8">
   <script src="jquery.min.js"></script>
   <script src="popup.js"></script>
-  <title>Example APOD call</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <title>APOD Popup</title>
 </head>
 <body>
-  <b>API URL:</b>
-  <pre id="reqObject"></pre>
+  <p id="date"></p>
 
-
+  <h3 id="apod_title"></h3>
   <img id="apod_img_id" width="250px"/>
 
   <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe>
   <p id="copyright"></p>
-
-  <h3 id="apod_title"></h3>
   <p id="apod_explaination"></p>
-  <br/>
-  <b>Return Object:</b>
-  <pre id="returnObject"></pre>
+  <p id="returnObject"></p>
 </body>
 </html>
