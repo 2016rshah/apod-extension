@@ -9,3 +9,6 @@ Here are the plans I have for this extension:
 -Improve styling
 
 -Upload it to Firefox Addons
+
+## Contributing
+If you want to help, please do. I don't know how to use GitHub very well. So it would be great.
