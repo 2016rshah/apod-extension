@@ -4,6 +4,7 @@ body {
   width:400px;
   overflow-x: hidden;
   font-family: sans-serif;
+  padding-top: 10px;
 }
 img {
   margin: 5px;
@@ -30,15 +31,20 @@ h1{
   border-radius: 5px;
   border-style: solid;
   border-color: #d8d8d8;
-  padding: 5px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 6px;
+  padding-right: 25px;
+  padding-left: 25px;
   background-color: #efefef;
-  font-size: 12px;
+  font-size: 13px;
   font-family: arial;
+  border-width: thin;
 }
 
 .button:hover {
   background-color: #d8d8d8;
-  cursor: pointer;
+  cursor: default;
+}
+.button:active {
+  background-color: lightblue;
+  border-color: lightblue
 }
