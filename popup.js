@@ -1,35 +1,3 @@
-/*REQURL = "https://astronomy-pic-of-the-day.herokuapp.com/api.json"
-resObject = {}
-function setImage(res){
-  var resultURL = res.url
-  var image = document.getElementById("image")
-  var img = document.createElement('img');
-  img.src = resultURL
-  img.setAttribute('alt', "yolo");
-  image.appendChild(img)
-}
-function setTitle(res){
-  var title = res.title
-  $("#title").html(title)
-}
-function setExplanation(res){
-  var explanation = res.explanation
-  $("#explanation").html(explanation)
-}
-document.addEventListener('DOMContentLoaded', function () {
-  $.ajax({ url: REQURL, success: function(result){
-    resObject = result
-    setImage(result)
-    setTitle(result)
-    setExplanation(result)
-  }});
-
-
-  $("#image").click(function(){
-    $("#explanation").toggle()
-  })
-});*/
-
 function loadAPOD(url) {
   $.ajax({
     url: url,
@@ -43,10 +11,12 @@ function loadAPOD(url) {
 
     if(result.media_type == "video") {
       $("#apod_img_id").css("display", "none");
+      $("#apod_vid_id").css("display", "block");
       $("#apod_vid_id").attr("src", result.url);
     }
     else {
       $("#apod_vid_id").css("display", "none");
+      $("#apod_img_id").css("display", "block");
       $("#apod_img_id").attr("src", result.url);
       $("#apod_img_id").attr("alt", result.url);
     }
