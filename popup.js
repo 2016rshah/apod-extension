@@ -54,7 +54,10 @@ function loadAPOD(url) {
     //$("#returnObject").text(JSON.stringify(result, null, 4));
     $("#apod_explaination").text(result.explanation);
     $("#apod_title").text(result.title);
-    $("#date").text(result.date);
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var textDate = result.date.split("-");
+    textDate[1] = " " + months[Number(textDate[1])-1] + " ";
+    $("#date").text(textDate.join(""));
     if (days == 0) {
       document.getElementById("nextButton").style.display = "none";
     } else {
