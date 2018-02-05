@@ -3,6 +3,7 @@ body {
   max-width: 500px;*/
   width:400px;
   overflow-x: hidden;
+  font-family: sans-serif;
 }
 img {
   margin: 5px;
@@ -25,6 +26,19 @@ h1{
   font-family: Arial;
 }
 
-body {
-  font-family: sans-serif;
+.button {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #d8d8d8;
+  padding: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #efefef;
+  font-size: 12px;
+  font-family: arial;
+}
+
+.button:hover {
+  background-color: #d8d8d8;
+  cursor: pointer;
 }
