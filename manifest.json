@@ -3,7 +3,7 @@
 
   "name": "APOD Popup",
   "description": "Astronomy Picture of the Day as a Popup in your Browser!",
-  "version": "1.0",
+  "version": "1.1",
   "author": "MasterOfTheTiger",
 
   "browser_action": {
