@@ -2,20 +2,24 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <script src="jquery.min.js"></script>
-  <script src="popup.js"></script>
   <link href="style.css" rel="stylesheet" type="text/css"/>
   <title>APOD Popup</title>
 </head>
 <body>
+  <p id='logger'></p>
+  <button id="backButton">Previous</button>
+  <button id="nextButton">Next</button>
   <p id="date"></p>
 
   <h3 id="apod_title"></h3>
   <img id="apod_img_id" width="250px"/>
 
   <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe>
-  <p id="copyright"></p>
+  <small id="copyright"></small>
   <p id="apod_explaination"></p>
   <a href="https://apod.nasa.gov" id="more">Go to the website to see more pictures.</a>
+  <script src="jquery.min.js"></script>
+  <script src="moment.js"></script>
+  <script src="popup.js"></script>
 </body>
 </html>
