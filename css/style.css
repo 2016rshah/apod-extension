@@ -1,9 +1,10 @@
 body {
   /*min-width: 357px;
   max-width: 500px;*/
-  width:400px;
+  width: 400px;
   overflow-x: hidden;
   font-family: sans-serif;
+  padding: 10px;
   padding-top: 10px;
 }
 #apod_img_id {
@@ -22,6 +23,9 @@ h1 {
 #back {
   display: none;
 }
+#foot {
+  border-top-color: black;
+}
 
 .arrow {
   size: 10%;
@@ -30,7 +34,9 @@ h1 {
 #apod_title {
   font-family: Arial;
 }
-
+a {
+  color: #61dcf4;
+}
 .button {
   border-radius: 5px;
   border-style: solid;
