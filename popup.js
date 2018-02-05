@@ -57,7 +57,8 @@ function loadAPOD(url) {
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     var textDate = result.date.split("-");
     textDate[1] = " " + months[Number(textDate[1])-1] + " ";
-    $("#date").text(textDate.join(""));
+    //$("#date").text(textDate.join(""));
+    document.getElementById('date').value = result.date;
     if (days == 0) {
       document.getElementById("nextButton").style.display = "none";
     } else {
@@ -94,6 +95,19 @@ document.getElementById("backButton").addEventListener("click", function(){
 document.getElementById("nextButton").addEventListener("click", function(){
   days = days + 1;
   url = 'https://api.nasa.gov/planetary/apod?date=' + getYesterdaysDate() + '&api_key=f88nlByrAKllCaklW1AtfDuqiAUKAinSni0EcjhW';
+  loadAPOD(url);
+});
+document.getElementById("sendButton").addEventListener("click", function(){
+  document.getElementById("controls").style.display = "none";
+  document.getElementById('back').style.display = "inline";
+  var datetoo = document.getElementById("date").value;
+  url = 'https://api.nasa.gov/planetary/apod?date=' + datetoo + '&api_key=f88nlByrAKllCaklW1AtfDuqiAUKAinSni0EcjhW';
+  loadAPOD(url);
+});
+document.getElementById("back").addEventListener("click", function(){
+  document.getElementById("controls").style.display = "inline";
+  document.getElementById('back').style.display = "none";
+  url = 'https://api.nasa.gov/planetary/apod?api_key=f88nlByrAKllCaklW1AtfDuqiAUKAinSni0EcjhW';
   loadAPOD(url);
 });
 

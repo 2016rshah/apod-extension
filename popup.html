@@ -4,14 +4,19 @@
   <meta charset="utf-8">
   <link href="style.css" rel="stylesheet" type="text/css"/>
   <link href="fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome-all.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="hint.min.css"></link>
   <title>APOD Popup</title>
 </head>
 <body>
-  <span class="button" id="backButton"><i class="fas fa-arrow-left"></i></span>
-  <span class="button" id="nextButton"><i class="fas fa-arrow-right"></i></span>
-
+  <span id="controls">
+    <span class="button" id="backButton"><i class="fas fa-arrow-left"></i></span>
+    <span class="button" id="nextButton"><i class="fas fa-arrow-right"></i></span>
+  </span>
   <span id="apod">
-    <p id="date"></p>
+    <span class="button" id="back"><i class="fas fa-backward"></i></span>
+    <input type="text" id="date" value="2018-02-04" />
+    <span class="hint--bottom" aria-label="Type in a manual date in the form YYYY-MM-DD"><i class="fas fa-question-circle"></i></span>
+    <span class="button" id="sendButton">Load</span>
 
     <h3 id="apod_title"></h3>
     <img id="apod_img_id" width="250px"/>

@@ -16,6 +16,12 @@ body {
 h1 {
   text-align:center;
 }
+#date {
+  max-width: 70px;
+}
+#back {
+  display: none;
+}
 
 .arrow {
   size: 10%;
