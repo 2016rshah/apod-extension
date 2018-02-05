@@ -6,21 +6,19 @@ body {
   font-family: sans-serif;
   padding-top: 10px;
 }
-img {
+#apod_img_id {
   margin: 5px;
   border: 2px solid black;
   vertical-align: middle;
   width: 95%;
   height: 100%;
 }
-h1{
+h1 {
   text-align:center;
 }
-#image {
-  text-align:center;
-}
-#explanation {
-  display:none;
+
+.arrow {
+  size: 10%;
 }
 
 #apod_title {

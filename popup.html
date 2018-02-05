@@ -3,20 +3,23 @@
 <head>
   <meta charset="utf-8">
   <link href="style.css" rel="stylesheet" type="text/css"/>
+  <link href="fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome-all.css" type="text/css" rel="stylesheet" />
   <title>APOD Popup</title>
 </head>
 <body>
-  <p id='logger'></p>
-  <span class="button" id="backButton">Previous</span>
-  <span class="button" id="nextButton">Next</span>
-  <p id="date"></p>
+  <span class="button" id="backButton"><i class="fas fa-arrow-left"></i></span>
+  <span class="button" id="nextButton"><i class="fas fa-arrow-right"></i></span>
 
-  <h3 id="apod_title"></h3>
-  <img id="apod_img_id" width="250px"/>
+  <span id="apod">
+    <p id="date"></p>
 
-  <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe>
-  <small id="copyright"></small>
-  <p id="apod_explaination"></p>
+    <h3 id="apod_title"></h3>
+    <img id="apod_img_id" width="250px"/>
+
+    <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe>
+    <small id="copyright"></small>
+    <p id="apod_explaination"></p>
+  </span>
   <a href="https://apod.nasa.gov" id="more">Go to the website to see more pictures.</a>
   <script src="jquery.min.js"></script>
   <script src="moment.js"></script>
