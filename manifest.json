@@ -1,14 +1,13 @@
 {
   "manifest_version": 2,
 
-  "name": "APOD",
-  "description": "Astronomy Picture of the Day",
-  "version": "2.0",
+  "name": "APOD Popup",
+  "description": "Astronomy Picture of the Day as a Popup in your Browser!",
+  "version": "1.2",
+  "author": "MasterOfTheTiger",
 
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
-  },
-  "permissions": [
-  ]
+  }
 }
