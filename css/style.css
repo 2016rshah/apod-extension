@@ -1,0 +1,71 @@
+body {
+  /*min-width: 357px;
+  max-width: 500px;*/
+  width: 400px;
+  overflow-x: hidden;
+  font-family: sans-serif;
+  padding: 10px;
+  padding-top: 10px;
+}
+#apod_img_id {
+  margin: 5px;
+  border: 2px solid black;
+  vertical-align: middle;
+  width: 95%;
+  height: 100%;
+}
+h1 {
+  text-align:center;
+}
+#date {
+  max-width: 90px;
+  font-size: 12px;
+  font-family: monospace;
+}
+#back {
+  display: none;
+}
+#loader {
+  display: none;
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+hr {
+  margin-bottom: 2px;
+  margin-top: 5px;
+  border: none;
+  border: 1px dashed #000;
+}
+
+.arrow {
+  size: 10%;
+}
+
+#apod_title {
+  font-family: Arial;
+}
+a {
+  color: #61dcf4;
+}
+.button {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #d8d8d8;
+  padding: 6px;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: #efefef;
+  font-size: 13px;
+  font-family: arial;
+  border-width: thin;
+}
+
+.button:hover {
+  background-color: #d8d8d8;
+  cursor: default;
+}
+.button:active {
+  background-color: lightblue;
+  border-color: lightblue
+}

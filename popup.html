@@ -1,15 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Getting Started Extension's Popup</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="jquery-2.1.3.min.js"></script>
-    <script src="popup.js"></script>
-  </head>
-  <body>
-    <h1 id = "title"></h1>
-    <div id = "image"></div>
-    <p id = "explanation"></p>
-  </body>
-</html>
+<head>
+  <meta charset="utf-8">
+  <link href="css/w3.css" rel="stylesheet" />
+  <link href="css/csspin.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <link href="fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome-all.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/hint.min.css"></link>
+  <title>APOD Popup</title>
+</head>
+<body class="w3-animate-top">
+  <span id="controls">
+    <span class="button" id="backButton"><i class="fas fa-arrow-left"></i></span>
+    <span class="button" id="nextButton"><i class="fas fa-arrow-right"></i></span>
+    <span class="button" id="back"><i class="fas fa-backward"></i></span>
+    <input type="text" id="date" value="2018-02-06" />
+    <span class="hint--bottom" aria-label="Type in a manual date in the form YYYY-MM-DD"><i class="fas fa-question-circle"></i></span>
+    <span class="button" id="sendButton">Load</span>
+  </span>
+  <br />
+  <div id="loader" class="cp-spinner cp-round"></div>
+  <span id="apod">
+    <h3 id="apod_title"></h3>
+    <img id="apod_img_id" width="250px"/>
 
+    <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe>
+    <small id="copyright"></small>
+    <p id="apod_explaination">If this is showing there is something wrong with the program.</p>
+  </span>
+  <hr />
+  <small id="foot">Images from <a href="https://apod.nasa.gov" id="more">NASA APOD</a> | Made by <a href="https://github.com/MasterOfTheTiger">MasterOfTheTiger</a> | Find this project on <a href="https://github.com/MasterOfTheTiger/apod-extension">GitHub</a> <i class="fab fa-github"></i>.</small>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/moment.js"></script>
+  <script src="js/popup.js"></script>
+</body>
+</html>
